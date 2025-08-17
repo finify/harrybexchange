@@ -13,16 +13,16 @@ export default defineConfig({
     ],
     server: {
         // host: '192.168.1.229',
-        host: 'exchange.test',
+        host: 'harrybexchange.test',
         port:5175,
         hmr: {
             // host: '192.168.1.229',
-            host: 'exchange.test',
+            host: 'harrybexchange.test',
             port:5175,
         },
         https: {
-            key: fs.readFileSync('/Users/macbookpro/.config/valet/Certificates/exchange.test.key'),
-            cert: fs.readFileSync('/Users/macbookpro/.config/valet/Certificates/exchange.test.crt'),
+            key: fs.readFileSync('/Users/macbookpro/.config/valet/Certificates/harrybexchange.test.key'),
+            cert: fs.readFileSync('/Users/macbookpro/.config/valet/Certificates/harrybexchange.test.crt'),
           },
     },
 });
