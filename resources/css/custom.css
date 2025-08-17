@@ -1,0 +1,107 @@
+:root:has( .modal-open, .modal[open], .modal:target, .modal-toggle:checked, .drawer:not([class*="drawer-open"]) > .drawer-toggle:checked ) {
+  scrollbar-width: none;
+}
+.history-tabs {
+  scrollbar-width: none;
+}
+
+.drawer-side {
+  border-right: 1px solid #323841;
+}
+
+[x-cloak] { display: none !important; }
+
+.dock-active {
+  &:after {
+      display:none!important;
+      bottom: 0.9rem!important;
+  }
+}
+
+footer .dock-lg {
+  height: 5.3rem!important;
+}
+footer .dock-lg {
+  button {
+    padding-bottom: 15px!important;
+  }
+  a{
+    padding-bottom:15px!important;
+  }
+}
+
+
+.strategy-modal{
+  .modal-box{
+    padding:15px!important;
+  }
+}
+
+.dropdown ul {
+  scrollbar-width: none;
+}
+
+.robot-container {
+  scrollbar-width: none;
+}
+
+.rc-anchor-logo-portrait{
+  display: none!important;
+}
+
+/* .modal-box button {
+    height:50px!important;
+    width:50px!important;
+}
+.modal-box button svg {
+    height:30px!important;
+    width:30px!important;
+} */
+ #loadingcover{
+  z-index:100!important;
+ }
+
+
+ /*
+  *  This is the marquee animation styles. 
+  *  Instead of adding this CSS you may wish to implement in your tailwind config. 
+  *  Learn more in the marquee Tailwind Config section
+  */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+/*
+  *  This is a container query used for the demo that does not need to be included
+  */
+.container-block {
+    container-type: inline-size;
+}
+@container (max-width: 1100px) {
+    .container-block svg:nth-child(3),
+    .container-block svg:nth-child(4) {
+        display: none;
+    }
+}
+
+.is_dark .hero-dark {
+  display:block!important;
+}
+.is_dark .hero-light {
+  display:none!important;
+}
+.is_light .hero-dark {
+  display:none!important;
+}
+.is_light .hero-light {
+  display:block!important;
+}
+
