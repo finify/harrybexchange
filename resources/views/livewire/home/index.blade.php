@@ -572,7 +572,7 @@ class extends Component {
                           </td>
                           <td class="boild">₦{{ number_format($card->sell_price, 2) }}/$</td>
                           <td>
-                            <a href="#" class="btn">Trade</a>
+                            <a href="https://wa.me/{{ config('app.whatsapp_number') }}?text=I%20want%20to%20redeem%20{{ $card->card_name }}" class="btn" target="_blank">Trade</a>
                             {{-- <a href="#" class="btn">Buy</a> --}}
                           </td>
                         </tr>

@@ -387,7 +387,7 @@ new class extends Component {
                                                                     <td class="boild">₦{{
                                                                         number_format($coin->buy_price, 2) }}/$</td>
                                                                     <td>
-                                                                        <a href="#" class="btn">Buy Crypto</a>
+                                                                        <a href="https://wa.me/{{ config('app.whatsapp_number') }}?text=I%20want%20to%20buy%20{{ $coin->coin_name }}%20({{ $coin->coin_code }})" class="btn">Buy Crypto</a>
                                                                         {{-- <a href="#" class="btn">Buy</a> --}}
                                                                     </td>
                                                                 </tr>
@@ -419,7 +419,7 @@ new class extends Component {
                                                                     <td class="boild">₦{{
                                                                         number_format($coin->sell_price, 2) }}/$</td>
                                                                     <td>
-                                                                        <a href="#" class="btn">Sell Crypto</a>
+                                                                        <a href="https://wa.me/{{ config('app.whatsapp_number') }}?text=I%20want%20to%20sell%20{{ $coin->coin_name }}%20({{ $coin->coin_code }})" class="btn">Sell Crypto</a>
                                                                         {{-- <a href="#" class="btn">Buy</a> --}}
                                                                     </td>
                                                                 </tr>
@@ -460,35 +460,27 @@ new class extends Component {
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">Asset Name</th>
-                                                                    <th scope="col">Buy Rate/$</th>
+                                                                    <th scope="col">Redeem Rate/$</th>
                                                                     <th scope="col">Trade</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <a href="#"><span class="icon-btc"><span
-                                                                                    class="path1"></span><span
-                                                                                    class="path2"></span></span>
-                                                                            <span>Bitcoin</span>
-                                                                            <span class="unit">BTC</span></a>
-                                                                    </td>
-                                                                    <td class="boild">1,500</td>
-                                                                    <td><a href="#" class="btn">Trade</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <a href="#"><span class="icon-eth"><span
-                                                                                    class="path1"></span><span
-                                                                                    class="path2"></span><span
-                                                                                    class="path3"></span><span
-                                                                                    class="path4"></span></span><span>Ethereum</span>
-                                                                            <span class="unit">ETH</span></a>
-                                                                    </td>
-                                                                    <td class="boild">1,600</td>
-                                                                    <td><a href="#" class="btn">Trade</a></td>
-                                                                </tr>
-
+                                                                @foreach ($cards as $card )
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="#">
+                                                                            <img src="/cards/{{ strtolower($card->card_image) }}" class="w-8" alt="">
+                                                                            <span>{{ $card->card_name }}</span>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td class="boild">₦{{ number_format($card->sell_price, 2) }}/$</td>
+                                                                        <td>
+                                                                            <a href="https://wa.me/{{ config('app.whatsapp_number') }}?text=I%20want%20to%20redeem%20{{ $card->card_name }}" class="btn" target="_blank">Trade</a>
+                                                                            {{-- <a href="#" class="btn">Buy</a> --}}
+                                                                        </td>
+                                                                    </tr>
+                                                                @endforeach
+                                                                
                                                             </tbody>
                                                         </table>
                                                         
