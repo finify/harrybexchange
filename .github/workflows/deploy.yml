@@ -90,8 +90,8 @@ jobs:
             
 
             #setup simlink to public and other things
-            if [ ! -f .utoronsetup ]; then
-              touch .utoronsetup
+            if [ ! -f .harrybexchangesetup ]; then
+              touch .harrybexchangesetup
               rm -rf $DIRROOT
 
               ln -s $DIR/public $DIRROOT

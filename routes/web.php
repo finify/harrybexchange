@@ -73,34 +73,34 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->group(function
 Route::prefix('/user')->namespace('App\Http\Controllers\User')->group(function(){
   Route::group(['middleware' => ['guest']], function() {
 
-    // All Login Routes 
-    Route::get('/', function () {
-        return redirect('/user/auth');
-        // return redirect()->intended('/');
-    });
+    // // All Login Routes 
+    // Route::get('/', function () {
+    //     return redirect('/user/auth');
+    //     // return redirect()->intended('/');
+    // });
 
-     //New Dashboard
-     Volt::route('/auth', 'user.auth.login')->name('user.auth.login');
+    //  //New Dashboard
+    //  Volt::route('/auth', 'user.auth.login')->name('user.auth.login');
      
-     Volt::route('/auth/register/{refcode?}', 'user.auth.register')->name('user.auth.register');
+    //  Volt::route('/auth/register/{refcode?}', 'user.auth.register')->name('user.auth.register');
 
-     Volt::route('/auth/resetpassword/{ref?}', 'user.auth.forgotpassword')->name('user.auth.forgotpassword');
+    //  Volt::route('/auth/resetpassword/{ref?}', 'user.auth.forgotpassword')->name('user.auth.forgotpassword');
 
-    /**
-     * App Register Routes
-     */
-    Route::get('/appregister', function () {
-        return redirect('/user/appregister/null');
-    });
-    Route::get('/appregister/{ref}', 'RegisterController@appshow')->name('register.appshow');
-    Route::post('/appregister', 'RegisterController@appregister')->name('register.appperform');
+    // /**
+    //  * App Register Routes
+    //  */
+    // Route::get('/appregister', function () {
+    //     return redirect('/user/appregister/null');
+    // });
+    // Route::get('/appregister/{ref}', 'RegisterController@appshow')->name('register.appshow');
+    // Route::post('/appregister', 'RegisterController@appregister')->name('register.appperform');
     
 
-      /**
-     * App Login Routes*
-     */
-    Route::get('/applogin', 'LoginController@appshow')->name('login.appshow');
-    Route::post('/applogin', 'LoginController@applogin')->name('login.appperform');
+    //   /**
+    //  * App Login Routes*
+    //  */
+    // Route::get('/applogin', 'LoginController@appshow')->name('login.appshow');
+    // Route::post('/applogin', 'LoginController@applogin')->name('login.appperform');
 
   });
 

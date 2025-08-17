@@ -19,6 +19,7 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
     'favicon' => env('APP_SITE_FAVICON', 'favicon.ico'),
     'logo' => env('APP_SITE_LOGO', 'logo.png'),
+    'whatsapp_number' => env('APP_WHATSAPP_NUMBER', null),
 
     /*
     |--------------------------------------------------------------------------
