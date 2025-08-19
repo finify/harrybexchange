@@ -38,7 +38,7 @@ class CoinsController extends Controller
         $request->validate([
             'coin_name' => 'required|string',
             'coin_code' => 'required|string',
-            'coin_wallet' => 'nullable|required|string',
+            'coin_wallet' => 'nullable|string',
             'sell_price' => 'nullable|numeric',
             'buy_price' => 'nullable|numeric',
             'coin_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
