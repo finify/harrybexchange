@@ -60,8 +60,6 @@ class CoinsController extends Controller
             $imageName = time() . '.' . $request->coin_image->extension();
             $request->coin_image->move(public_path('coins'), $imageName);
             $validated['coin_image'] = $imageName;
-        }else{
-            dd('no image');
         }
 
         Coins::create($validated);
