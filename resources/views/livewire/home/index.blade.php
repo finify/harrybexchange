@@ -502,7 +502,7 @@ class extends Component {
     </div>
   </section> --}}
 
-  <section class="coin-list">
+  <section class="coin-list" id="asset">
     <div class="container">
       <div class="row">
         <div class="col-md-12">

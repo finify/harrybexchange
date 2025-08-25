@@ -18,7 +18,7 @@ new class extends Component {
                         <h6>Let's talk! 🤙</h6>
                         <ul class="list">
                             <li>
-                                <p>+12 345 678 9101</p>
+                                <p>+234 904 479 1911</p>
                             </li>
                             <li>
                                 <p>info@harrybexchange.com</p>
@@ -37,19 +37,19 @@ new class extends Component {
                         <div class="widget-link">
                             <h6 class="title">PRODUCTS</h6>
                             <ul>
-                                <li><a href="#">Crypto</a></li>
-                                <li><a href="#">Giftcards</a></li>
-                                <li><a href="#">E-funds</a></li>
+                                <li><a href="#asset">Crypto</a></li>
+                                <li><a href="#asset">Giftcards</a></li>
+                                <li><a href="#asset">E-funds</a></li>
                             </ul>
                         </div>
                         <div class="widget-link s2">
-                            <h6 class="title">Company</h6>
+                            {{-- <h6 class="title">Company</h6>
                             <ul>
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">Faq</a></li>
                                 <li><a href="#">Support</a></li>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>

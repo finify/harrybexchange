@@ -73,13 +73,13 @@ new class extends Component {
                                             <a href="/">Home </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="/buy">Buy Asset </a>
+                                            <a href="#asset">Buy Asset </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="/sell">Sell Asset </a>
+                                            <a href="#asset">Sell Asset </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="/rates">Asset Rates </a>
+                                            <a href="#asset">Asset Rates </a>
                                         </li>
 
                                     </ul>
@@ -224,10 +224,10 @@ new class extends Component {
                                 </div>
                             </div> --}}
                             <div class="mobile-button"><span></span></div>
-                            <div class="wallet">
+                            {{-- <div class="wallet">
                                 <a href="#">Login </a>
-                            </div>
-                            <div class="dropdown user">
+                            </div> --}}
+                            {{-- <div class="dropdown user">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton4"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="assets/images/avt/avt-01.jpg" alt="" />
@@ -251,7 +251,7 @@ new class extends Component {
                                             class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i>
                                         <span>Logout</span></a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -536,7 +536,7 @@ new class extends Component {
             <div class="relative top-0 bottom-0 right-0 flex-shrink-0 hidden w-1/3 overflow-hidden bg-cover lg:block">
 
                 <div class="absolute inset-0 z-20 w-full h-full opacity-70 bg-gradient-to-t from-black"></div>
-                <img src="https://cdn.devdojo.com/images/may2023/pines-bg-2.png"
+                <img src="/assets/images/coinimage.webp"
                     class="z-10 object-cover w-full h-full" />
             </div>
         </div>
